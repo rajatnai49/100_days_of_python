@@ -9,4 +9,4 @@ Day-04: [Rock Paper Scissor](./days_01-14_beginner/day04)<br/>
 Day-05: [Password generator](./days_01-14_beginner/day05)<br/>
 Day-06: [Escaping Maze](./days_01-14_beginner/day06)<br/>
 Day-07: [Hangman](./days_01-14_beginner/day07)<br/>
-Day-07: [Caesar Cipher](./days_01-14_beginner/day08)<br/>
+Day-08: [Caesar Cipher](./days_01-14_beginner/day08)<br/>
