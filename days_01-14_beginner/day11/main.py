@@ -8,10 +8,33 @@ def blackJack_game():
     def deal_cards(cards):
         return random.choice(cards)
 
-    def player_loss(player, dealer):
-        if sum(player) != 21 and sum(dealer) == 21:
+    def play_again():
+        play_again = input("Do you want to play again y/n?: ")
+        if play_again == 'y':
+            click.clear()
+            blackJack_game()
+        else:
+            print("Sayonara!!")
+
+    def hit_action():
+        hit = input("You want another card or not y/n?: ")
+        if hit == 'n':
+            done_playing()
+        elif hit == 'y':
+            keep_playing()
+
+    def player_win():
+        if sum(dealer_cards) > 21:
             return True
-        elif sum(player) == 21 and sum(dealer) == 21:
+        elif sum(player_cards) != 21 and sum(dealer_cards) == 21:
+            return False
+        elif sum(player_cards) == 21 and sum(dealer_cards) == 21:
+            return False
+        elif sum(player_cards) == 21 and sum(dealer_cards) != 21:
+            return True
+        elif sum(player_cards) > 21:
+            return False
+        elif sum(player_cards) > sum(dealer_cards):
             return True
         return False
 
@@ -20,26 +43,13 @@ def blackJack_game():
             f"Your hand is: {player_cards}, a total sum is {sum(player_cards)}")
         print(
             f"Dealer's hand is: {dealer_cards}, a total sum is {sum(dealer_cards)}")
-        if sum(dealer_cards) > 21:
-            print("You WIN!!")
-        elif player_loss(player_cards, dealer_cards):
-            print("You LOSE!!")
-        elif sum(player_cards) == 21 and sum(dealer_cards) != 21:
-            print("You WIN!!")
-        elif sum(player_cards) > 21:
-            print("You LOSE!!")
+        if player_win():
+            print("You WON!!")
         elif sum(player_cards) == sum(dealer_cards):
             print("It's Draw!!")
-        elif sum(player_cards) > sum(dealer_cards):
-            print("You WIN!!")
         else:
             print("You LOSE!!")
-        play_again = input("Do you want to play again y/n?: ")
-        if play_again == 'y':
-            click.clear()
-            blackJack_game()
-        else:
-            print("Sayonara!!")
+        play_again()
 
     def keep_playing():
         player_cards.append(deal_cards(cards))
@@ -52,19 +62,11 @@ def blackJack_game():
             f"Dealer's hand is: {dealer_cards}, a total is {sum(dealer_cards)}")
         if sum(player_cards) > 21:
             print("You Lose!!")
-            play_again = input("Do you want to play again y/n?: ")
-            if play_again == 'y':
-                click.clear()
-                blackJack_game()
-            else:
-                print("Sayonara!!")
+            play_again()
         if sum(player_cards) <= 21:
-            hit = input("You want another card or not: y/n")
-            if hit == 'n':
-                done_playing()
-            elif hit == 'y':
-                keep_playing()
+            hit_action()
 
+    click.clear()
     print(logo)
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     player_cards = []
@@ -74,11 +76,8 @@ def blackJack_game():
     dealer_cards.append(deal_cards(cards))
     print(f"Your cards are: {player_cards}")
     print(f"Dealer cards are: {dealer_cards}")
-    hit = input("You want another card or not: y/n")
-    if hit == 'n':
-        done_playing()
-    elif hit == 'y':
-        keep_playing()
+    hit_action()
 
 
+# start game
 blackJack_game()
