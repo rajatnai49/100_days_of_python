@@ -16,3 +16,4 @@
 **Day-12:** [Scope & Number Guessing Game](./day12/)<br/>
 **Day-13:** [Debugging: How to Find and Fix Errors in your Code](./day13/)<br/>
 **Day-14:** [Higher Lower Game Project on Pokemon Stats](./day14/)<br/>
+**Day-15:** [Coffee Machine](./day15/)<br/>
