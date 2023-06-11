@@ -19,3 +19,4 @@
 | Day-15 | [Coffee Machine](./day15/)                                     |
 | Day-16 | [Coffee Machine(Using OOP)](./day16/)                          |
 | Day-17 | [Quiz Game](./day17/)                                          |
+| Day-18 | [Turtle GUI](./day18/)                                         |
