@@ -20,3 +20,9 @@
 | Day-16 | [Coffee Machine(Using OOP)](./day16/)                          |
 | Day-17 | [Quiz Game](./day17/)                                          |
 | Day-18 | [Turtle GUI](./day18/)                                         |
+| Day-19 | [Betting Game](./day19/)                                       |
+| Day-20 | [Creating Snake](./day20/)                                     |
+| Day-21 | [Snake Game](./day21/)                                         |
+| Day-22 | [Pong Game](./day22/)                                          |
+| Day-23 | [Turtle Crossing](./day23/)                                    |
+
