@@ -26,4 +26,4 @@
 | Day-22 | [Pong Game](./day22/)                                                                  |
 | Day-23 | [Turtle Crossing](./day23/)                                                            |
 | Day-24 | [Snake Game With High Score/Read and write files in python with the "with"](./day024/) |
-
+| Day-25 | [Indian State Guessing Game](./day025)                                                 |
