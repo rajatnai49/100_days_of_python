@@ -22,9 +22,9 @@ def treasure_hunt():
     *******************************************************************************
     ''')
     print("Welcome")
-    print("You have to find tesasure")
+    print("You have to find treasure")
     flag = True
-    
+
     while flag:
         first = input("left or right\n").lower()
         if first == "right":
@@ -61,12 +61,12 @@ def treasure_hunt():
             flag = False
         else:
             print("wtf!!! write it correctly")
-            
+
     flag = True
-    
-    
+
     while flag:
-        second = input("You have a river in between. you can swim through river or wait for boat. swim or wait\n").lower()
+        second = input(
+            "You have a river in between. you can swim through river or wait for boat. swim or wait\n").lower()
         if second == "swim":
             print('''
                             (`.
@@ -82,8 +82,8 @@ def treasure_hunt():
             return
         elif second == "wait":
             print("Nice, you made it to the next level, you're pretty good at this!")
-            print ("Welcome to:")
-            print ('''
+            print("Welcome to:")
+            print('''
             _                                     _     _                 _ 
             | |                                   (_)   | |               | |
             | |_ _ __ ___  __ _ ___ _   _ _ __ ___ _ ___| | __ _ _ __   __| |
@@ -94,11 +94,12 @@ def treasure_hunt():
             flag = False
         else:
             print("wtf!!! write it correctly")
-            
+
     flag = True
-    
+
     while flag:
-        third = input("Now that you've made it to Treasure Island, you can dig or search the cave. \nType Dig/Cave: ").lower()
+        third = input(
+            "Now that you've made it to Treasure Island, you can dig or search the cave. \nType Dig/Cave: ").lower()
         if third == "dig":
             print("You've found the treasure, you win!")
             flag = False
@@ -117,5 +118,6 @@ def treasure_hunt():
             return
         else:
             print("wtf!!! write it correctly")
-    
+
+
 treasure_hunt()

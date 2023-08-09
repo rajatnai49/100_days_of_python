@@ -1,8 +1,16 @@
-def band_name_generator():
-    print("What city are you grow in?")
-    city = input()
-    print("What your first pet name?")
-    pet = input()
-    return city+" "+pet
+import random
+from data_set import adjectives, nouns
 
-print(band_name_generator())
+
+def generate_character_name():
+    adjective = random.choice(adjectives)
+    noun = random.choice(nouns)
+    return adjective + ' ' + noun
+
+
+def main():
+    print(generate_character_name())
+
+
+if __name__ == "__main__":
+    main()
