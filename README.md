@@ -2,8 +2,8 @@
 
 | Day    | Title                                                                                  |
 | ------ | -------------------------------------------------------------------------------------- |
-| Day-01 | [Band Name Generator](./day001)                                                        |
-| Day-02 | [Tip Calculator](./day002)                                                             |
+| Day-01 | [Anime Name Generator](./day001)                                                       |
+| Day-02 | [Anime Quiz](./day002)                                                                 |
 | Day-03 | [Treasure Hunt](./day003)                                                              |
 | Day-04 | [Rock Paper Scissor](./day004)                                                         |
 | Day-05 | [Password Generator](./day005)                                                         |
